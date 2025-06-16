@@ -1,10 +1,17 @@
-<<<<<<< HEAD
+# 🍽️ Zomato Clone - Frontend Only
 
-# Zomato clone (new project )
+This is a **frontend clone** of the Zomato website built using **HTML, CSS, and
+JavaScript**. The project replicates key sections of Zomato such as the
+homepage, restaurant listings, and responsive UI elements.
 
-we make this zomato clone project using HTML, CSS, and JavaScript
+---
 
-# About this clone ;
+## 🚀 Technologies Used
 
-This clone was not optimized and minimal but it work with basic functions only
-make zomato front-end side
+- **HTML5** – Structure of the web pages
+- **CSS3** – Styling and responsiveness
+- **JavaScript** – UI interactivity (e.g., filter, dropdowns, modals)
+
+---
+
+## 📁 Folder Structure
