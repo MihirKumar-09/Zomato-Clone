@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a restaurant | Zomato</title>
+    <link rel="icon" href="./Images/MainLogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <head>
+      <div class="nav-head">
+        <div class="nav-bar">
+          <div class="nav-title">
+            <h4>zomato</h4>
+            <p>-restaurant partner-</p>
+          </div>
+          <a href="#" id="login" class="add-account-login"> Login </a>
+          <a href="#" id="signUp" style="display: none">Sign</a>
+        </div>
+      </div>
+
+      <!-- !Login -->
+      <div class="dark-bg"></div>
+      <div class="login-container">
+        <div class="login-text">
+          <h2>Login</h2>
+          <i class="fa-solid fa-xmark exit"></i>
+        </div>
+        <div class="phone">
+          <div class="drop-down">
+            <select name="country" id="country">
+              <option value="+91" data-flag="🇮🇳" selected>India (+91)</option>
+              <option value="+93" data-flag="🇦🇫">Afghanistan (+93)</option>
+              <option value="+355" data-flag="🇦🇱">Albania (+355)</option>
+              <option value="+213" data-flag="🇩🇿">Algeria (+213)</option>
+              <option value="+1684" data-flag="🇦🇸">
+                American Samoa (+1684)
+              </option>
+              <option value="+376" data-flag="🇦🇩">Andorra (+376)</option>
+              <option value="+244" data-flag="🇦🇴">Angola (+244)</option>
+              <option value="+1264" data-flag="🇦🇮">Anguilla (+1264)</option>
+              <option value="+672" data-flag="🇦🇶">Antarctica (+672)</option>
+              <option value="+1268" data-flag="🇦🇬">
+                Antigua and Barbuda (+1268)
+              </option>
+              <option value="+54" data-flag="🇦🇷">Argentina (+54)</option>
+              <option value="+374" data-flag="🇦🇲">Armenia (+374)</option>
+              <option value="+297" data-flag="🇦🇼">Aruba (+297)</option>
+              <option value="+61" data-flag="🇦🇺">Australia (+61)</option>
+              <option value="+43" data-flag="🇦🇹">Austria (+43)</option>
+              <option value="+994" data-flag="🇦🇿">Azerbaijan (+994)</option>
+              <option value="+1242" data-flag="🇧🇸">Bahamas (+1242)</option>
+              <option value="+973" data-flag="🇧🇭">Bahrain (+973)</option>
+              <option value="+880" data-flag="🇧🇩">Bangladesh (+880)</option>
+              <option value="+1246" data-flag="🇧🇧">Barbados (+1246)</option>
+              <option value="+375" data-flag="🇧🇾">Belarus (+375)</option>
+              <option value="+32" data-flag="🇧🇪">Belgium (+32)</option>
+              <option value="+501" data-flag="🇧🇿">Belize (+501)</option>
+            </select>
+          </div>
+          <input type="number" placeholder="Phone" />
+        </div>
+
+        <!-- Send One Time OTP -->
+        <div class="otp-or">
+          <div class="otp">
+            <span>Send One Time Password</span>
+          </div>
+          <div class="divider">
+            <span>or</span>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Continue with Email </span>
+        </div>
+
+        <!-- Sign in with google -->
+        <div class="google">
+          <img src="./Images/google-logo.png" alt="google-logo" />
+          <span>Sign in with Google </span>
+        </div>
+
+        <!-- Another divider -->
+        <hr />
+
+        <!-- New to Zomato -->
+        <div class="new-to-zomato">
+          <span>New to Zomato?<a href="#" id="create">Create account</a> </span>
+        </div>
+      </div>
+
+      <!--! SignUp -->
+      <div class="sign-up">
+        <div class="login-text">
+          <h2>Sign up</h2>
+          <i class="fa-solid fa-xmark exitSignUp"></i>
+        </div>
+        <!-- Name -->
+        <div class="name">
+          <input
+            type="text"
+            placeholder="Full Name"
+            required
+            title="Please enter a valid name"
+          />
+        </div>
+        <!-- Email -->
+        <div class="name">
+          <input
+            id="signUp-email"
+            type="email"
+            placeholder="Email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address like example@gmail.com"
+          />
+        </div>
+        <!-- Check Box -->
+        <div class="checkBox">
+          <input type="checkbox" name="age" class="signCheckBox" />
+          <p
+            style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 13px;
+              color: #555;
+            "
+          >
+            I agree to Zomato's
+            <span style="color: #e74c3c; font-weight: 500"
+              >Terms of Service</span
+            >,
+            <span style="color: #e74c3c; font-weight: 500">Privacy Policy</span>
+            and
+            <span style="color: #e74c3c; font-weight: 500"
+              >Content Policies</span
+            >
+          </p>
+        </div>
+        <!-- Create account -->
+        <div class="create-account">
+          <a href="#"><button class="create-btn">Create account</button></a>
+        </div>
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <!-- Sign in with google -->
+        <div class="google">
+          <img src="./Images/google-logo.png" alt="google-logo" />
+          <span>Sign in with Google </span>
+        </div>
+
+        <!-- Another divider -->
+        <hr />
+
+        <!-- New to Zomato -->
+        <div class="new-to-zomato signUp-new">
+          <span
+            >Already have an account?<a href="#" id="logIn">Log in</a>
+          </span>
+        </div>
+      </div>
+    </head>
+
+    <!-- ! Main container -->
+    <main>
+      <div class="top-part"></div>
+
+      <!--! hero text -->
+      <div class="hero-text">
+        <div class="hero-head1">
+          <h2>Partner with Zomato</h2>
+          <h2>and grow your business</h2>
+        </div>
+        <p>
+          <b>0% commission for 1st month!</b> Valid for new restaurant partners
+          in select cities
+        </p>
+      </div>
+
+      <div class="bottom-part">
+        <div class="free-space"></div>
+        <div class="partner-with-zomato">
+          <div class="section-heading">
+            <div class="line"></div>
+            <span>Why should you partner with Zomato?</span>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefits">
+            <div>
+              <i class="fas fa-users"> </i>
+              <h6>Attract new</h6>
+              <h6>customers</h6>
+              <p class="about-client">Reach the millions of people</p>
+              <p>ordering on Zomato</p>
+            </div>
+            <div>
+              <i class="fas fa-shopping-bag"></i>
+              <h6>Doorstep delivery</h6>
+              <h6>convenience</h6>
+              <p class="about-client">Easily get your orders</p>
+              <p>delivered through our</p>
+              <p>trained delivery partners</p>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <h6>Onboarding</h6>
+              <h6>support</h6>
+              <p class="about-client">For any support, email us at</p>
+              <p>merchantonboarding@zomato.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="document">
+        <div class="document-text">
+          <h4>Get Started - It only takes 10 minutes</h4>
+          <p>
+            Please keep these documents and details ready for a smooth sign-up
+          </p>
+          <div class="document-card">
+            <div class="document-1">
+              <div class="pan">
+                <i class="fas fa-check-circle" style="color: green"></i>
+                PAN Card
+              </div>
+              <div class="license">
+                <i class="fas fa-check-circle" style="color: green"></i>
+                FSSAI license
+                <p>Don't have a FSSAI license? <a href="#">Apply here</a></p>
+              </div>
+              <div class="bank-account">
+                <i class="fas fa-check-circle" style="color: green"></i>
+                Bank account details
+              </div>
+            </div>
+
+            <div class="document-1">
+              <div class="gst">
+                <i class="fas fa-check-circle" style="color: green"></i>
+                GST number, if applicable
+              </div>
+              <div class="menu">
+                <i class="fas fa-check-circle" style="color: green"></i>
+                Menu & profile food image
+                <p>What is profile food image? <a href="#">Refer here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-proof">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Dz7TYlH_igg?si=bccf48O792eYdfFt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="stories">
+        <h4>Restaurant success stories</h4>
+        <div class="success-gallery">
+          <div class="success-content">
+            <p>
+              Zomato enabled me to restart my operations post-COVID when I had
+              no hope of doing my business again. I'm grateful to the platform
+              for helping me thrive - my online ordering business has done so
+              well, it has even taken over my dining business!
+            </p>
+            <hr />
+            <div class="success-profile">
+              <div class="success-profiles"></div>
+              <div class="profile-about">
+                <h6>Jeff Bezos</h6>
+                <p id="profile-details">
+                  Owner - Amazon, Bellevue, Washington, near Seattle
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="success-content special">
+            <p>
+              Thanks to Zomato's invaluable support, our startup cloud kitchen
+              has been doing wonders in the competitive food industry landscape.
+              Their dedication to promoting local businesses and powerful
+              reporting tools have been instrumental in our success, and we look
+              forward to a long-term partnership<br />
+              I'm grateful to the platform for helping me thrive - my online
+              ordering business.
+            </p>
+
+            <hr />
+            <div class="success-profile">
+              <div class="success-profiles profile-2"></div>
+              <div class="profile-about">
+                <h6>Elon Musk</h6>
+                <p id="profile-details">
+                  Owner - Tesla, <br />just outside of Austin
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="success-content">
+            <p>
+              Zomato enabled me to restart my operations post-COVID when I had
+              no hope of doing my business again. I'm grateful to the platform
+              for helping me thrive - my online ordering business has done so
+              well, it has even taken over my dining business!
+            </p>
+            <hr />
+            <div class="success-profile">
+              <div class="success-profiles profile-3"></div>
+              <div class="profile-about">
+                <h6>Steve Jobs</h6>
+                <p id="profile-details">
+                  Owner - Apple, One Apple Park Way, Cupertino, California
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="frequent-questions">
+        <h4>Frequently asked questions</h4>
+        <div class="explore-content">
+          <div>
+            What are the documents and details required to start deliveries
+            through Zomato?
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div>
+            How long will it take for a restaurant to go live on Zomato after
+            submitting the documents?
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div>
+            What is the one-time onboarding fee? Do I have to pay it at the time
+            of registration?
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div>
+            How can I get help and support from Zomato if I get stuck?
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div>
+            How much commission will I be charged by Zomato?
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div>
+            How will I get my payouts?
+            <span class="arrow">&#9660;</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer section -->
+    <footer class="add-restaurant-footer">
+      <div class="footer-container">
+        <div class="footer-head">
+          <h4>zomato</h4>
+          <div class="help-email">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#">merchantonboarding@zomato.com</a>
+          </div>
+        </div>
+        <div class="about-zomato">
+          <div class="zomato-details">
+            <div>
+              <h6>ABOUT ZOMATO</h6>
+              <a href="#">Who Are You</a>
+              <a href="#">Blog</a>
+              <a href="#">Work With Us</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Report Fraud</a>
+              <a href="#">Press Kit</a>
+            </div>
+            <div>
+              <h6>ZOMAVERSE</h6>
+              <a href="#">Zomato</a>
+              <a href="#">Blinkit</a>
+              <a href="#">Feeding India</a>
+              <a href="#">Hyperpure</a>
+              <a href="#">Zomaland</a>
+              <a href="#">Weather Union</a>
+            </div>
+            <div>
+              <h6>FOR RESTAURANT</h6>
+              <a href="#">Partner With Us</a>
+              <a href="#">Apps For You</a>
+            </div>
+            <div>
+              <h6>LEARN MORE</h6>
+              <a href="#">Privacy</a>
+              <a href="#">Security</a>
+              <a href="#">Terms</a>
+              <a href="#">Sitemap</a>
+            </div>
+            <div></div>
+          </div>
+          <!-- Social Links -->
+          <div class="social-links">
+            <h4>SOCIAL LINKS</h4>
+            <div class="social-icon">
+              <a href="www.linkedin.com/in/mihirkuma09">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/__simple_boy_mihir/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="app-buttons">
+              <!-- Apple App Store -->
+              <a
+                href="https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="Download on the App Store"
+                  width="150"
+                />
+              </a>
+
+              <!-- Google Play Store -->
+              <a
+                href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_IN&pli=1"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Get it on Google Play"
+                  width="150"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="act">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2024 © Zomato™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

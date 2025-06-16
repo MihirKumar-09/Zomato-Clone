@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Restaurant, cafe's in India - Zomato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Images/MainLogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header -->
+    <main class="main-1">
+      <div class="background"></div>
+      <div class="home-container">
+        <ul>
+          <a href="add-reestaurant.html"><li>Add Restaurant</li></a>
+          <a href="#"><li id="login">Log in</li></a>
+          <a href="#"><li id="signUp">Sign up</li></a>
+        </ul>
+      </div>
+      <div class="head">
+        <h1>zomato</h1>
+        <h2>Find the best restaurant, cafés and bars in India</h2>
+      </div>
+
+      <!-- Login Page -->
+      <div class="dark-bg"></div>
+      <div class="login-container">
+        <div class="login-text">
+          <h2>Login</h2>
+          <i class="fa-solid fa-xmark exit"></i>
+        </div>
+        <div class="phone">
+          <div class="drop-down">
+            <select name="country" id="country">
+              <option value="+91" data-flag="🇮🇳" selected>India (+91)</option>
+              <option value="+93" data-flag="🇦🇫">Afghanistan (+93)</option>
+              <option value="+355" data-flag="🇦🇱">Albania (+355)</option>
+              <option value="+213" data-flag="🇩🇿">Algeria (+213)</option>
+              <option value="+1684" data-flag="🇦🇸">
+                American Samoa (+1684)
+              </option>
+              <option value="+376" data-flag="🇦🇩">Andorra (+376)</option>
+              <option value="+244" data-flag="🇦🇴">Angola (+244)</option>
+              <option value="+1264" data-flag="🇦🇮">Anguilla (+1264)</option>
+              <option value="+672" data-flag="🇦🇶">Antarctica (+672)</option>
+              <option value="+1268" data-flag="🇦🇬">
+                Antigua and Barbuda (+1268)
+              </option>
+              <option value="+54" data-flag="🇦🇷">Argentina (+54)</option>
+              <option value="+374" data-flag="🇦🇲">Armenia (+374)</option>
+              <option value="+297" data-flag="🇦🇼">Aruba (+297)</option>
+              <option value="+61" data-flag="🇦🇺">Australia (+61)</option>
+              <option value="+43" data-flag="🇦🇹">Austria (+43)</option>
+              <option value="+994" data-flag="🇦🇿">Azerbaijan (+994)</option>
+              <option value="+1242" data-flag="🇧🇸">Bahamas (+1242)</option>
+              <option value="+973" data-flag="🇧🇭">Bahrain (+973)</option>
+              <option value="+880" data-flag="🇧🇩">Bangladesh (+880)</option>
+              <option value="+1246" data-flag="🇧🇧">Barbados (+1246)</option>
+              <option value="+375" data-flag="🇧🇾">Belarus (+375)</option>
+              <option value="+32" data-flag="🇧🇪">Belgium (+32)</option>
+              <option value="+501" data-flag="🇧🇿">Belize (+501)</option>
+            </select>
+          </div>
+          <input type="number" placeholder="Phone" />
+        </div>
+
+        <!-- Send One Time OTP -->
+        <div class="otp-or">
+          <div class="otp">
+            <span>Send One Time Password</span>
+          </div>
+          <div class="divider">
+            <span>or</span>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Continue with Email </span>
+        </div>
+
+        <!-- Sign in with google -->
+        <div class="google">
+          <img src="./Images/google-logo.png" alt="google-logo" />
+          <span>Sign in with Google </span>
+        </div>
+
+        <!-- Another divider -->
+        <hr />
+
+        <!-- New to Zomato -->
+        <div class="new-to-zomato">
+          <span>New to Zomato?<a href="#" id="create">Create account</a> </span>
+        </div>
+      </div>
+      <!-- ! Sign Up Page -->
+      <div class="sign-up">
+        <div class="login-text">
+          <h2>Sign up</h2>
+          <i class="fa-solid fa-xmark exitSignUp"></i>
+        </div>
+        <!-- Name -->
+        <div class="name">
+          <input
+            type="text"
+            placeholder="Full Name"
+            required
+            title="Please enter a valid name"
+          />
+        </div>
+        <!-- Email -->
+        <div class="name">
+          <input
+            id="signUp-email"
+            type="email"
+            placeholder="Email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address like example@gmail.com"
+          />
+        </div>
+        <!-- Check Box -->
+        <div class="checkBox">
+          <input type="checkbox" name="age" class="signCheckBox" />
+          <p
+            style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 13px;
+              color: #555;
+            "
+          >
+            I agree to Zomato's
+            <span style="color: #e74c3c; font-weight: 500"
+              >Terms of Service</span
+            >,
+            <span style="color: #e74c3c; font-weight: 500">Privacy Policy</span>
+            and
+            <span style="color: #e74c3c; font-weight: 500"
+              >Content Policies</span
+            >
+          </p>
+        </div>
+        <!-- Create account -->
+        <div class="create-account">
+          <a href="#"><button class="create-btn">Create account</button></a>
+        </div>
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <!-- Sign in with google -->
+        <div class="google">
+          <img src="./Images/google-logo.png" alt="google-logo" />
+          <span>Sign in with Google </span>
+        </div>
+
+        <!-- Another divider -->
+        <hr />
+
+        <!-- New to Zomato -->
+        <div class="new-to-zomato signUp-new">
+          <span
+            >Already have an account?<a href="#" id="logIn">Log in</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="locations">
+        <div class="location-head">
+          <h2 class="popular">Popular locations in</h2>
+          <img src="./Images/india-logo.png" />
+          <h2 class="india">India</h2>
+        </div>
+
+        <div class="country-description">
+          <p>
+            From swanky upscale restaurants to the cosiest hidden gems serving
+            the most incredible food, Zomato covers it all. Explore menus, and
+            millions of restaurant photos and reviews from users just like you,
+            to find your next great meal.
+          </p>
+        </div>
+
+        <div class="states">
+          <a href="chhose-location.html"
+            ><div>
+              <h5>Agra Restaurants</h5>
+              <i class="fa-solid fa-chevron-right"></i></div
+          ></a>
+          <a href="chhose-location.html"
+            ><div>
+              <h5>Ahmedabad Restaurants</h5>
+              <i class="fa-solid fa-chevron-right"></i></div
+          ></a>
+          <div>
+            <h5>Ajmer Restaurants</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Alappuzha Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Allahabad Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Amravati Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Amritsar Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Aurangabad Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Bengaluru Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Bhopal Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Bhubaneswer Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Chandigarh Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Chennai Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Coimbatore Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Cuttack Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Darjeeling Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Dehradun Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Delhi NCR Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Dharamshala Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Gangtok Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Goa Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Gorakhpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Guntur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Guwahati Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Gwalior Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Haridwar Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Hyderabad Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Indore Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jabalpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jaipur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jalandhar Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jammu Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jamnagr Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Jamshedpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kanpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Khajuraho Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Khamgaon Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kharagpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kochi Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kolhapur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kolkata Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Kota Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Lucknow Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Ludhiana Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Madurai Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Manali NCR Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>mangalore Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Manipal Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Meerut Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Mumbai Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Mussoorie Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Mysore Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Nagpur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Nainital Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Nashik Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Neemrana Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Ooty Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Palakkad Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Pune Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Pushkar Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Raipur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Rajkot Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Ranchi Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Rishikesh Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Salem Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Shimla Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Siliguri Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Srinagar Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Surat Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Thrissur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Tirupati Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Trichy Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Trivandrum Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Udaipur Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Vadodara Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>varanasi Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Vellore Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Vijayawada Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div>
+            <h5>Visakhapatnam Restaurant</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--! Footer -->
+    <footer class="footer-1">
+      <div class="about">
+        <div class="section">
+          <h3>zomato</h3>
+          <!-- Country and Language -->
+          <div class="co-lang">
+            <div class="co">
+              <img src="./Images/india-logo.png" />
+              <p>India</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="lang">
+              <i class="fa-solid fa-globe"></i>
+              <p>English</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="UAE">
+          <div class="ind">
+            <img src="./Images/india-logo.png" />
+            <p>India</p>
+          </div>
+          <div class="uae">
+            <img src="./Images/UAE.png" />
+            <p>UAE</p>
+          </div>
+        </div>
+        <div class="about-zomato">
+          <div class="footer-column">
+            <!-- About Zomato -->
+            <h4>ABOUT ZOMATO</h4>
+            <a href="#">Who We Are</a>
+            <a href="#">Blog</a>
+            <a href="#">Work With Us</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Report Fraud</a>
+            <a href="#">Press Kit</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <!-- Zomaverse -->
+          <div class="footer-column">
+            <h4>ZOMAVERSE</h4>
+            <a href="#">Zomato</a>
+            <a href="#">Blinkit</a>
+            <a href="#">District</a>
+            <a href="#">Feeding India</a>
+            <a href="#">Hyperpure</a>
+            <a href="#">Zomato Live</a>
+            <a href="#">Zomaland</a>
+            <a href="#">Weather Union</a>
+          </div>
+
+          <!-- Empty Column -->
+          <div class="footer-column"></div>
+
+          <!-- Learn More -->
+          <div class="footer-column">
+            <h4>LEARN MORE</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+          </div>
+          <div class="footer-column">
+            <h4>SOCIAL LINKS</h4>
+            <div class="social-icon">
+              <a href="www.linkedin.com/in/mihirkuma09">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/__simple_boy_mihir/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="app-buttons">
+              <!-- Apple App Store -->
+              <a
+                href="https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="Download on the App Store"
+                  width="150"
+                />
+              </a>
+
+              <!-- Google Play Store -->
+              <a
+                href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_IN&pli=1"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Get it on Google Play"
+                  width="150"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr style="opacity: 0.5" />
+        <!-- About copyright -->
+        <p class="copy-right">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2025 © Zomato™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
